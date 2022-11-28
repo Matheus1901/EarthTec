@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Comprar</title>
+</head>
+<body class="w3-responsive">
+    <!--Início Navegação-->
+    <div>
+        <header style="display: flex;" class="w3-light-grey">
+            <nav class="w3-block w3-text-black w3-light-grey">
+                <a class="w3-hover w3-hover-text-green" href="index.html">Home</a>
+                <a class="w3-hover w3-hover-text-blue" href="Projetos.html">Projetos</a>
+                <a class="w3-hover w3-hover-text-yellow" href="Contato.html">Contato</a>
+
+            </nav>
+            <div><img style="margin-right: 10px;" src="logo.png" alt="" width="150px" height="40px"></div>
+
+        </header>
+    </div>
+    <!--Fim Navegação-->
+    <!--inicio introdução-->
+    <div class="w3-container w3-light-green w3-text-white w3-padding w3-padding-64" style="height:50%">
+        <h1 style="font-weight: bold;">EarthTec</h1>
+        <h3>Uma empresa Sustentável & Econômica</h3>
+        <h5>Desde 2022, levando a tecnologia até você!</h5>
+    </div>
+    <!--Fim introdução-->
+    <br>
+    <!--Começo Compra-->
+    <div class="w3-container">
+        <div class="w3-half w3-container">
+            <h2 style="font-weight: bold;">C . E . S . A</h2>
+            <h2>Controlador de Entrada e Saída de Água</h2>
+            <h2>Custos: </h2>
+            <h3>Aluguel (mensal) + manutenção</h3>
+            <h2 class="w3-text-orange">R$ 30,00</h2>
+            <h3>Valor de compra</h3>
+            <h2 class="w3-text-orange">R$ 350,00</h2>
+            <h4>12 meses de garantia</h4>
+            <br>
+            <br>
+            <h2>Especificações:</h2>
+            <h3>Dimenções: 18,5cm x 10cm x 5cm</h3>
+            <h3>Conteudo da caixa:</h3>
+            <h3>
+            <ul>
+                <li>1x C . E . S . A </li>
+                <li>1x Carregador 5v</li>
+                <li>1x Manual de uso</li>
+            </ul>
+        </h3>
+        <h3>Alimentação:</h3>
+        <h3>5v (volts)</h3>
+        <h3>Tamanho da bateria (mAh):</h3>
+        <h3>1000mAh</h3>
+        </div>
+        <div class="w3-half" style="width: 40%; height: 40%">
+            <div class=" w3-display-container">
+                <div>
+                    <img class="mySlides img" src="projeto.1.png" style="width:100%; height:100%;">
+                </div>
+                <div>
+                    <img class="mySlides img" src="projeto.2.png" style="width:100%; height:100%;">
+                </div>
+                <div>
+                    <img class="mySlides img" src="projeto.3.png" style="width:100%; height:100%;">
+                </div>
+
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right " onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+<!--Fim Compra-->
+<!--SlideShow JavaScript-->
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="w3-light-green" style="width:100% ; height:40px;"></div>
+</body>
